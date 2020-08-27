@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="eventstyles.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="mediaqueryevents.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="header">
+    <img class="menu-button" src="menu-button-of-three-horizontal-lines.png" alt="menubutton">
+    <div class="logo">
+        <img src="meetprep.jpg" alt="logo">
+    </div>
+    <div class="header-right">
+        <img class="bell" src="icons8-notification-32.png" alt="notification">
+        <a class="notification" href="#">Notifications</a>
+        <a class="hello" href="#">Hello, Oana</a>
+        <img class="smile" src="icons8-happy-24.png" alt="happy">
+    </div>
+</div>
+<div class="container-page">
+    <div class="container-left">
+        <div class="menu">
+            <div class="home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 23v-6a4 4 0 0 1 8 0v6"/>
+                        <path d="M1 21V10l11-9 11 9v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2z"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">Dashboard</a>
+            </div>
+            <div class="events">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 9H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2zM19 9h-4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2zM7 21H3a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2zM19 21h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2z"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">Events</a>
+            </div>
+            <div class="agenda">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19.182 23.727H5.546a2.274 2.274 0 0 1-2.273-2.272V3.273A2.274 2.274 0 0 1 5.546 1h15.909v20.455a2.274 2.274 0 0 1-2.273 2.272z"/>
+                        <path d="M12.364 13.5a2.842 2.842 0 0 0 0-5.682 2.842 2.842 0 0 0 0 5.682zM16.91 18.24c-1.04-.806-2.693-1.331-4.546-1.331-1.853 0-3.507.525-4.545 1.332M1 5.545h2.273M1 12.364h2.273M1 19.182h2.273M21.455 1h2.273A2.274 2.274 0 0 1 26 3.273v2.272a2.274 2.274 0 0 1-2.272 2.273h-2.273M21.455 7.818h2.273A2.274 2.274 0 0 1 26 10.091v2.273a2.274 2.274 0 0 1-2.272 2.272h-2.273"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">Contacts</a>
+            </div>
+            <div class="calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                    <g fill="none" fill-rule="evenodd">
+                        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"
+                              d="M1 8h22M21 24H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2z"/>
+                        <path fill-rule="nonzero" stroke="#FFF" stroke-linecap="square"
+                              d="M5.5.5v2.992M18.5.5v2.992M9.5.5v2.992M14.5.5v2.992"/>
+                        <path fill="#FFF" fill-rule="nonzero"
+                              d="M5 11h2v2H5zM9 11h2v2H9zM13 11h2v2h-2zM17 11h2v2h-2zM5 15h2v2H5zM9 15h2v2H9zM13 15h2v2h-2zM17 15h2v2h-2zM5 19h2v2H5zM9 19h2v2H9zM13 19h2v2h-2zM17 19h2v2h-2z"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">Calendar</a>
+            </div>
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="round">
+                        <path d="M17.676 18.061v-.9c0-1.786-4.03-2.703-6.176-2.703s-6.176.917-6.176 2.703v.9M11.5 12.4c1.8 0 3.088-1.261 3.088-3.089V7.767c0-1.827-1.288-3.088-3.088-3.088s-3.088 1.26-3.088 3.088v1.544C8.412 11.14 9.7 12.4 11.5 12.4z"/>
+                        <path d="M21.794 11.627c0 5.828-4.724 10.552-10.551 10.552C5.415 22.179.69 17.455.69 11.627.691 5.8 5.415 1.076 11.243 1.076c5.827 0 10.551 4.724 10.551 10.551z"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">My profile</a>
+            </div>
+            <div class="mailbox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 5.923l9.324 4.304c1.064.49 2.288.49 3.352 0L23 5.923"/>
+                        <path d="M21 19H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"/>
+                    </g>
+                </svg>
+                <a href="#" class="menu-content">Communication</a>
+            </div>
+        </div>
+        <div class="second-menu">
+            <div class="filters">
+                <h4>Filters</h4>
+                <input type="text" id="myInput" placeholder="Search" title="Type an event">
+                <hr>
+            </div>
+            <div class="location">
+                <h4>Location</h4>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option1" name="all" value="all" checked>
+                        <span>All</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option2" name="europe" value="europe">
+                        <span>Europe</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option3" name="namerica" value="namerica">
+                        <span>North America</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option4" name="samerica" value="samerica">
+                        <span>South America</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option5" name="asia" value="asia">
+                        <span>Asia</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option6" name="australia" value="australia">
+                        <span>Australia</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option7" name="africa" value="africa">
+                        <span>Africa</span></label></div>
+                <hr>
+            </div>
+
+            <div class="time">
+
+                <h4>Time</h4>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="time1" name="allt" value="allt" checked>
+                        <span>All</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="time2" name="future" value="future">
+                        <span>Future</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="time3" name="current" value="current">
+                        <span>Current</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="time4" name="past" value="past">
+                        <span>Past</span></label></div>
+                <hr>
+            </div>
+            <div class="interest">
+                <h4>Interest</h4>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="interest1" name="alli" value="alli" checked>
+                        <span>All</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="interest2" name="going" value="going">
+                        <span>Going</span></label></div>
+                <div class="column">
+                    <label class="checkbox">
+                        <input type="checkbox" id="interest3" name="interested" value="interested">
+                        <span>Interested</span></label></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="middle">
+            <a class="recommended all" href="#">Recommended</a>
+            <a class="all-events all" href="#">All events</a>
+            <a class="my-events all" href="#">My events</a>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/6.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">SEP</p>
+                        <p class="day">16</p>
+                    </div>
+                    <div class="text">
+                        <h5>Washington International Strategic Leadership Conference</h5>
+                        <time class="green">16 - 18 Sep 2019</time>
+                        <address class="address">Greenbelt, 7810 Walker Dr Greenbelt MD 20770, US</address>
+                    </div>
+                </div>
+
+
+                <!--dropdown-->
+                <div class="dropdown">
+
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+
+                </div>
+                <!--dropdown-->
+            </div>
+
+
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/4.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">MAR</p>
+                        <p class="day">3</p>
+                    </div>
+                    <div class="text">
+                        <h5>AAHAR - International Food &amp; Hospitality Fair</h5>
+                        <time class="green">3 - 7 Mar 2020</time>
+                        <address class="address">New Delhi, Mathura Road Railway Colony, IN</address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box"><img src="http://meetprep.beta.bitstone.eu/img/default/events/8.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">JUN</p>
+                        <p class="day">21</p>
+                    </div>
+                    <div class="text">
+                        <h5>SAITEX Africa</h5>
+                        <time class="green">21 - 23 Jun 2020</time>
+                        <address class="address">Johannesburg, 19 Richard Drive,
+                            Midrand, Johannesburg, 1685, ZA
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/1.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">FEB</p>
+                        <p class="day">24</p>
+                    </div>
+                    <div class="text">
+                        <h5>R+T Asia</h5>
+                        <time class="green">24 - 26 Feb 2020</time>
+                        <address class="address">Shanghai, 2345 Longyang Rd ShiJi GongYuan Pudong Xinqu
+                            Shanghai Shi 201204, CN
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+
+            <!--SECOND ROW-->
+
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/7.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">AUG</p>
+                        <p class="day">11</p>
+                    </div>
+                    <div class="text">
+                        <h5>Toronto Gift Fair</h5>
+                        <time class="green">11 - 14 Aug 2019</time>
+                        <address class="address">Toronto, 650 Dixon Rd, Etobicoke,
+                            ON M9W 1J1, CA
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/1.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">APR</p>
+                        <p class="day">18</p>
+                    </div>
+                    <div class="text">
+                        <h5>America’s Beauty Show
+                        </h5>
+                        <time class="green">18 - 20 Apr 2020</time>
+                        <address class="address">Chicago, 2301 S King Dr Chicago IL
+                            60616, US
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box"><img src="http://meetprep.beta.bitstone.eu/img/default/events/2.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">MAR</p>
+                        <p class="day">4</p>
+                    </div>
+                    <div class="text">
+                        <h5>SHANGHAI APPPEXPO</h5>
+                        <time class="green">4 - 7 Mar 2020</time>
+                        <address class="address">Shanghai, China Shanghai Shi Lai
+                            Port Road Qingpu District No. 111, CN
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/4.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">OCT</p>
+                        <p class="day">21</p>
+                    </div>
+                    <div class="text">
+                        <h5>The Franchise Expo -
+                            Toronto Fall</h5>
+                        <time class="green">21 - 22 Oct 2019</time>
+                        <address class="address">Mississauga, 6900 Airport Rd
+                            Mississauga ON L4V 1E8, CA
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+
+            <!--THIRD ROW-->
+
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/8.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">MAR</p>
+                        <p class="day">4</p>
+                    </div>
+                    <div class="text">
+                        <h5>ITB Berlin</h5>
+                        <time class="green">4 - 8 Mar 2020</time>
+                        <address class="address">Berlin, Messedamm 22 14055
+                            Berlin, DE
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/5.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">MAR</p>
+                        <p class="day">15</p>
+                    </div>
+                    <div class="text">
+                        <h5>Seafood Expo North America</h5>
+                        <time class="green">15 - 17 Mar 2020</time>
+                        <address class="address">Boston, 415 Summer St, Boston,
+                            MA 02210, US
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/6.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">OCT</p>
+                        <p class="day">4</p>
+                    </div>
+                    <div class="text">
+                        <h5>The Property Investor Show</h5>
+                        <time class="green">4 - 5 Oct 2019</time>
+                        <address class="address">London, Royal Victoria Dock 1
+                            Western Gateway London E16 1XL, UK
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+            <div class="box">
+                <img src="http://meetprep.beta.bitstone.eu/img/default/events/9.jpg" alt="first">
+                <div class="content">
+                    <div class="heading-date">
+                        <p class="month">OCT</p>
+                        <p class="day">3</p>
+                    </div>
+                    <div class="text">
+                        <h5>ZAK Salaam India Expo</h5>
+                        <time class="green">3 - 6 Oct 2019</time>
+                        <address class="address">Singapore, 1 Expo Dr, SG
+                        </address>
+                    </div>
+                </div>
+                <!--dropdown-->
+                <div class="dropdown">
+                    <div class="drop-class">
+                        <button class="dropbtn">Going</button>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Going</a>
+                        <a href="#">Interested</a>
+                        <a href="#">Not for me</a>
+                    </div>
+                </div>
+                <!--dropdown-->
+            </div>
+
+
+        </div>
+        <div class="pages">
+            <div class="prev"><a href="#">&#129120; PREV</a></div>
+            <div class="page one green-page"><a href="#">1</a></div>
+            <div class="page two"><a href="#">2</a></div>
+            <div class="page three"><a href="#">3</a></div>
+            <div class="page four"><a href="#">4</a></div>
+            <div class="page five"><a href="#">5</a></div>
+            <div class="page dot">...</div>
+            <div class="page eightynine"><a href="#">89</a></div>
+            <div class="next"><a href="#">NEXT &#129122;</a></div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">About</a></li>
+                <li class="faq"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="copyright">&#169; 2019 MeetPrep</div>
+    </div>
+</div>
+
+</body>
+</html>
